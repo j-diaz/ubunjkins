@@ -6,7 +6,7 @@
 ### Install Openjdk8 (Do not use OracleJDK)
 ```bash
 sudo apt-get update
-sudo apt-get install openjdk-8-jrk
+sudo apt-get install openjdk-8-jdk
 ```
 ###  Verify java installation 
 ```bash
