@@ -86,7 +86,7 @@ Feb 23 04:13:25 ubuntu-s-1vcpu-1gb-nyc1-jenkins systemd[1]: Started LSB: Start J
  service jenkins restart
  service jenkins stop
 ```
-If you are still getting errors, open `/etc/init.d/jenkins` and verify the `$PATH` variable points to the value listed by `whereis java` command. You may run into issues if you used the OracleJDK instead of OpenJDK.
+If you are still getting errors, open `/etc/init.d/jenkins` and verify the `$PATH` variable points to the value listed by `whereis java` command. You may run into issues if you used the OracleJDK instead of OpenJDK. You may need to run: ` systemctl daemon-reload` after you fix your changes.
 
 ### Paranoid process check
 If you want to be absolutely sure its running and the above was not enough evidence. You can always run:
